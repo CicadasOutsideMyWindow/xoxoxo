@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+     <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:rowCount="3">
+
+         <ImageView
+             android:id="@+id/bubblesImg"
+             android:layout_width="125dp"
+             android:layout_height="160dp"
+             android:onClick="selectCharacter"
+             android:tag="bubbles"
+             app:srcCompat="@drawable/bubbles" />
+
+         <ImageView
+             android:id="@+id/zeeImg"
+             android:layout_width="110dp"
+             android:layout_height="160dp"
+             android:onClick="selectCharacter"
+             android:tag="zee"
+             app:srcCompat="@drawable/zee" />
+
+         <ImageView
+             android:id="@+id/newtImg"
+             android:layout_width="125dp"
+             android:layout_height="178dp"
+             android:onClick="selectCharacter"
+             android:tag="newt"
+             app:srcCompat="@drawable/newt" />
+
+         <ImageView
+             android:id="@+id/fuseImg"
+             android:layout_width="125dp"
+             android:layout_height="160dp"
+             android:onClick="selectCharacter"
+             android:tag="fuse"
+             app:srcCompat="@drawable/fuse" />
+
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>
